@@ -1,0 +1,228 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/bg-rag.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content{
+  width: 380px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 5px 3px 5px 0px rgba(0,0,0,.12);
+}
+.title, .modal-title{
+  padding: 15px;
+  width: 100%;
+  height: 20px;
+  background: rgb(53, 93, 204);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.title h5, .modal-title h5{
+  color: #fff;
+}
+.area{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 20px 0px 0px 0px;
+}
+.form-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.form-login .input{
+  margin-bottom: 10px;
+}
+.input span{
+  color: rgb(53, 93, 204);
+  font-weight: bold;
+  font-size: 14px;
+}
+input[type="text"], input[type="password"]{
+  width: 170px;
+  padding: 2px 4px;
+}
+.keep{
+   display: flex;
+   justify-content: center;
+}
+.keep span{
+  font-size: 12px;
+}
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 10px 10px 0px;
+}
+.buttons button{
+  width: 60px;
+  height: 25px;
+  margin-left: 10px;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 4px;
+  box-shadow: 1px 2px 1px 0px rgba(0,0,0,0.12);
+  cursor: pointer;
+  outline: none;
+}
+.buttons button:active{
+  transform: scale(0.9);
+  border: 1px solid rgb(53, 93, 204);
+}
+
+
+
+/** MODAL **/
+.modal{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+.active{
+  visibility: visible;
+}
+.modal-container{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg-rag.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content{
+  width: 680px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 5px 3px 5px 0px rgba(0,0,0,.12);
+}
+.modal-area{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  padding: 20px 0px 0px 0px;
+}
+.personagens{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.personagem{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+  height: 160px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+.personagem .bol{
+  transform: rotateX(50deg);
+  width: 50px;
+  height: 40px;
+  border-radius: 20px;
+  background: rgb(0,0,0,0.12);
+}
+.personagem.activePerso{
+  border: 4px solid rgb(53, 93, 204);
+  background-image: url(../img/test.png);
+  background-position: 50% 90%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.activePersoSelect{
+  font-weight: bold;
+  color: #fff;
+  padding: 2px 40px;
+  background: rgb(53, 93, 204);
+  font-size: 14px;
+}
+.status{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.status .col1, .col2{
+  background: rgb(128, 162, 255);
+}
+.col1 p, .col2 p{
+  padding: 5px;
+  border: 1px solid #fff;
+  color: rgb(6, 12, 27);
+  font-weight: bold;
+  font-size: 14px;
+}
+.col1, .col2{
+  display: flex;
+  justify-content: center´;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.name-info{
+  display: flex;
+  flex-direction: column;
+}
+.name-info p{
+  color: black;
+  font-weight: normal;
+  width: 90px;
+  padding: 5px;
+  border: 1px solid #fff;
+  background: rgb(230, 236, 255);
+}
+
+.status .col3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.col3 p{
+  padding: 6px 15px;
+  border: 1px solid rgb(99, 137, 241);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(53, 93, 204);
+}
+.col3 .paragrafo{
+  margin-top: 40px;
+}
+.col3 .paragrafo p{
+  border: none;
+  padding: 0;
+  font-size: 35px;
+  color: rgb(53, 93, 204);
+  font-weight: bold;
+}
