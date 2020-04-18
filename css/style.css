@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+.container {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -14,15 +14,16 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.content{
+.content {
   width: 380px;
   background: #fff;
   display: flex;
   flex-direction: column;
   border-radius: 4px;
-  box-shadow: 5px 3px 5px 0px rgba(0,0,0,.12);
+  box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.12);
 }
-.title, .modal-title{
+.title,
+.modal-title {
   padding: 15px;
   width: 100%;
   height: 20px;
@@ -33,66 +34,66 @@
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-.title h5, .modal-title h5{
+.title h5,
+.modal-title h5 {
   color: #fff;
 }
-.area{
+.area {
   width: 90%;
   display: flex;
   justify-content: space-around;
   margin: auto;
   padding: 20px 0px 0px 0px;
 }
-.form-login{
+.form-login {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 }
-.form-login .input{
+.form-login .input {
   margin-bottom: 10px;
 }
-.input span{
+.input span {
   color: rgb(53, 93, 204);
   font-weight: bold;
   font-size: 14px;
 }
-input[type="text"], input[type="password"]{
+input[type="text"],
+input[type="password"] {
   width: 170px;
   padding: 2px 4px;
 }
-.keep{
-   display: flex;
-   justify-content: center;
+.keep {
+  display: flex;
+  justify-content: center;
 }
-.keep span{
+.keep span {
   font-size: 12px;
 }
-.buttons{
+.buttons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 5px 10px 10px 0px;
 }
-.buttons button{
+.buttons button {
   width: 60px;
   height: 25px;
   margin-left: 10px;
   border: 1px solid rgb(189, 189, 189);
   border-radius: 4px;
-  box-shadow: 1px 2px 1px 0px rgba(0,0,0,0.12);
+  box-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   outline: none;
 }
-.buttons button:active{
+.buttons button:active {
   transform: scale(0.9);
   border: 1px solid rgb(53, 93, 204);
 }
 
-
-
 /** MODAL **/
-.modal{
+.modal {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -100,10 +101,10 @@ input[type="text"], input[type="password"]{
   left: 0;
   visibility: hidden;
 }
-.active{
+.active {
   visibility: visible;
 }
-.modal-container{
+.modal-container {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -115,15 +116,15 @@ input[type="text"], input[type="password"]{
   justify-content: center;
   align-items: center;
 }
-.modal-content{
+.modal-content {
   width: 680px;
   background: #fafafa;
   display: flex;
   flex-direction: column;
   border-radius: 4px;
-  box-shadow: 5px 3px 5px 0px rgba(0,0,0,.12);
+  box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.12);
 }
-.modal-area{
+.modal-area {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -131,12 +132,12 @@ input[type="text"], input[type="password"]{
   margin: auto;
   padding: 20px 0px 0px 0px;
 }
-.personagens{
+.personagens {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.personagem{
+.personagem {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -146,54 +147,57 @@ input[type="text"], input[type="password"]{
   border: 1px solid #999;
   border-radius: 4px;
 }
-.personagem .bol{
+.personagem .bol {
   transform: rotateX(50deg);
   width: 50px;
   height: 40px;
   border-radius: 20px;
-  background: rgb(0,0,0,0.12);
+  background: rgb(0, 0, 0, 0.12);
 }
-.personagem.activePerso{
+.personagem.activePerso {
   border: 4px solid rgb(53, 93, 204);
   background-image: url(../img/test.png);
   background-position: 50% 90%;
   background-size: 50%;
   background-repeat: no-repeat;
 }
-.activePersoSelect{
+.activePersoSelect {
   font-weight: bold;
   color: #fff;
   padding: 2px 40px;
   background: rgb(53, 93, 204);
   font-size: 14px;
 }
-.status{
+.status {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.status .col1, .col2{
+.status .col1,
+.col2 {
   background: rgb(128, 162, 255);
 }
-.col1 p, .col2 p{
+.col1 p,
+.col2 p {
   padding: 5px;
   border: 1px solid #fff;
   color: rgb(6, 12, 27);
   font-weight: bold;
   font-size: 14px;
 }
-.col1, .col2{
+.col1,
+.col2 {
   display: flex;
   justify-content: center´;
   flex-wrap: nowrap;
   align-items: flex-start;
 }
-.name-info{
+.name-info {
   display: flex;
   flex-direction: column;
 }
-.name-info p{
+.name-info p {
   color: black;
   font-weight: normal;
   width: 90px;
@@ -202,13 +206,13 @@ input[type="text"], input[type="password"]{
   background: rgb(230, 236, 255);
 }
 
-.status .col3{
+.status .col3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.col3 p{
+.col3 p {
   padding: 6px 15px;
   border: 1px solid rgb(99, 137, 241);
   border-radius: 4px;
@@ -216,13 +220,67 @@ input[type="text"], input[type="password"]{
   font-weight: bold;
   color: rgb(53, 93, 204);
 }
-.col3 .paragrafo{
+.col3 .paragrafo {
   margin-top: 40px;
 }
-.col3 .paragrafo p{
+.col3 .paragrafo p {
   border: none;
   padding: 0;
   font-size: 35px;
   color: rgb(53, 93, 204);
   font-weight: bold;
+}
+
+/* modal loading */
+
+.modal-loading {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.modal-loading.active {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.modal-loading .container {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background: url("../img/loading.jpg");
+  background-size: cover;
+}
+.modal-loading .container .progress {
+  position: relative;
+  top: 200px;
+  background: #777;
+  height: 10px;
+  width: 300px;
+}
+.modal-loading .container .progress .progress-bar {
+  position: absolute;
+  background: #add555;
+  height: 100%;
+  animation: progress 6s ease-in-out;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 60%;
+  }
+  80% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
 }
