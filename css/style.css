@@ -17,7 +17,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/bg-rag.jpg);
+  background-image: url(../img/bg-rag.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -134,7 +134,7 @@ input[type="password"] {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-image: url(../img/bg-rag.jpg);
+  background-image: url(../img/bg-rag.webp);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -182,7 +182,7 @@ input[type="password"] {
 }
 .personagem.activePerso {
   border: 4px solid rgb(53, 93, 204);
-  background-image: url(../img/test.png);
+  background-image: url(../img/test.webp);
   background-position: 50% 90%;
   background-size: 50%;
   background-repeat: no-repeat;
@@ -279,7 +279,7 @@ input[type="password"] {
   width: 100%;
   position: relative;
   height: 100vh;
-  background: url("../img/loading.jpg");
+  background: url("../img/loading.webp");
   background-size: cover;
 }
 .modal-loading .container .progress {
